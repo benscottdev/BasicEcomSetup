@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import Nav from "./Nav";
-import Cart from "../Pages/Cart";
 
 function Header() {
   return (
