@@ -22,13 +22,13 @@ function Cart({ cartItems, setCartItems }) {
           <div className="cartProduct" key={index}>
             <h1>{item.product}</h1>
             <h2>${item.price}</h2>
-            <img src={item.img} alt={item.product} />
+            {/* <img src={item.img} alt={item.product} /> */}
             <button onClick={() => removeItem(item.id)}>X</button>
           </div>
         ))}
-      </div>
-      <div className="totalPrice">
-        <h1>Total: ${getTotalPrice().toFixed(2)}</h1>
+        <div className="totalPrice">
+          <h1>Subtotal: ${getTotalPrice().toFixed(2)}</h1>
+        </div>
       </div>
     </div>
   );

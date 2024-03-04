@@ -7,7 +7,9 @@ function Header() {
     <div className="header">
       <Nav />
       <h1>STORE</h1>
-      <Link to="/cart">Cart</Link>
+      <Link id="cartButton" to="/cart">
+        Cart
+      </Link>
     </div>
   );
 }
